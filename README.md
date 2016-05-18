@@ -10,10 +10,8 @@ About us
 -------
 Here you can find more information about the developers behind this project
 
-Marco Andre Lostaunau
--------
+#Marco Andre Lostaunau
 http://lostaunaum.github.io/PortfolioPage/
 
-Mason Taylor Posch
--------
+#Mason Taylor Posch
 http://masonposch.github.io/professionalportfolio/
