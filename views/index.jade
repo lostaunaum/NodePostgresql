@@ -1,5 +1,78 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+    h1= title
+    p Dynamic Crud operations for a USER object
+
+    // Wrapper
+    #wrapper
+
+        // USER INFO
+        #userInfo
+            h2 User Info
+            p
+                strong First Name:
+                |  <span id='userInfoFirstName'></span>
+                br
+                strong Middle Name:
+                |  <span id='userInfoMiddleName'></span>
+                br
+                strong Last Name:
+                |  <span id='userInfoLastName'></span>
+                br
+                strong Email:
+                |  <span id='userInfoEmail'></span>
+        // /USER INFO
+
+        // USER LIST
+        h2 User List
+        #userList
+            table
+                thead
+                    th Id
+                    th UserName
+                    th Email
+                    th FirstName
+                    th MiddleName
+                    th LastName
+                    th Delete?
+                    th Update?
+                tbody
+        // /USER LIST
+
+        // ADD USER
+        h2 Add User
+        #addUser
+            fieldset
+                input#inputUserFirstName(type='text', placeholder='First Name')
+                input#inputUserEmail(type='text', placeholder='Email')
+                br
+                input#inputUserMiddleName(type='text', placeholder='Middle Name')
+                input#inputUserLastName(type='text', placeholder='Last Name')
+                br
+                input#inputUserUserName(type='text', placeholder='User Name')
+                input#inputUserPassword(type='password', placeholder='Password')
+                br
+                button#btnAddUser Add User
+        // /ADD USER
+
+        // UPDATE USER
+        h2 Update User
+        #updateUser
+            fieldset
+                input#inputUpdateUserFirstName(type='text', placeholder='First Name')
+                input#inputUpdateUserLastName(type='text', placeholder='Last Name')
+                br
+                input#inputUpdateUserMiddleName(type='text', placeholder='Middle Name')
+                input#inputUpdateUserUserName(type='text', placeholder='Username')
+                br
+                input#inputUpdateUserEmail(type='text', placeholder='Email')
+                input#inputUpdateUserPassword(type='text', placeholder='Password')
+                br
+                input#inputUpdateUserID(type='hidden')
+                button#btnUpdateUser Update User
+        // /UPDATE USER
+    // /WRAPPER
+    h2 Creators:
+    h3 Marco A. Lostaunau
+    h3 Mason T. Posch
